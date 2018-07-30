@@ -1,0 +1,1253 @@
+2018-07-25 11:32:03 [main] INFO  c.e.d.controller.EmployeeController - Start
+2018-07-25 11:32:04 [main] INFO  c.e.d.EmployeeManagementApplication - Starting EmployeeManagementApplication on Lenovo-MP11LE5G with PID 14108 (G:\STSWorkSpace\EmployeeManagement\bin\main started by sagonugunta in G:\STSWorkSpace\EmployeeManagement)
+2018-07-25 11:32:04 [main] INFO  c.e.d.EmployeeManagementApplication - No active profile set, falling back to default profiles: default
+2018-07-25 11:32:04 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@243c4f91: startup date [Wed Jul 25 11:32:04 IST 2018]; root of context hierarchy
+2018-07-25 11:32:09 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9010 (http)
+2018-07-25 11:32:09 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9010"]
+2018-07-25 11:32:09 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2018-07-25 11:32:09 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-07-25 11:32:09 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_111\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:/Program Files/Java/jre1.8.0_111/bin/server;C:/Program Files/Java/jre1.8.0_111/bin;C:/Program Files/Java/jre1.8.0_111/lib/amd64;C:\oraclexe\app\oracle\product\11.2.0\server\bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Common Files\lenovo\easyplussdk\bin;C:\Program Files (x86)\Lenovo\Password Manager\;C:\Program Files (x86)\MySQL\MySQL Server 5.5\bin;C:\Program Files\Java\jdk1.8.0_111\bin;C:\Program Files\Git\cmd;C:\Program Files\Apache Software Foundation\apache-maven-3.5.2\bin;C:\Gradle\gradle-4.8.1\bin;C:\Program Files\MongoDB\Server\4.0\bin;C:\Program Files\Redis\;C:\Users\sagonugunta\Downloads\Softwares\spring-tool-suite-3.9.4.RELEASE-e4.7.3a-win32-x86_64\sts-bundle\sts-3.9.4.RELEASE;;.]
+2018-07-25 11:32:11 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-07-25 11:32:11 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 6850 ms
+2018-07-25 11:32:11 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-25 11:32:11 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-25 11:32:11 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-25 11:32:11 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-25 11:32:11 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2018-07-25 11:32:11 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-07-25 11:32:12 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-07-25 11:32:12 [main] INFO  org.mongodb.driver.cluster - Adding discovered server localhost:27017 to client view of cluster
+2018-07-25 11:32:13 [cluster-ClusterId{value='5b581264005c7a371c03e5f1', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:86}] to localhost:27017
+2018-07-25 11:32:14 [cluster-ClusterId{value='5b581264005c7a371c03e5f1', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 0]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=21981303}
+2018-07-25 11:32:14 [cluster-ClusterId{value='5b581264005c7a371c03e5f1', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Discovered cluster type of STANDALONE
+2018-07-25 11:32:18 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/employees/add],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controller.EmployeeController.addEmployee(com.example.demo.pojo.Employee)
+2018-07-25 11:32:18 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/employees/update/{id}],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controller.EmployeeController.updateEmployee(com.example.demo.pojo.Employee,java.lang.String)
+2018-07-25 11:32:18 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/employees/getbyid/{id}],methods=[GET]}" onto public com.example.demo.pojo.Employee com.example.demo.controller.EmployeeController.getEmployeeById(java.lang.String)
+2018-07-25 11:32:18 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/employees/all],methods=[GET]}" onto public java.util.List<com.example.demo.pojo.Employee> com.example.demo.controller.EmployeeController.getEmployee()
+2018-07-25 11:32:18 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/employees/getbydesc/{desc}],methods=[GET]}" onto public com.example.demo.pojo.Employee com.example.demo.controller.EmployeeController.getEmployeeByDesc(java.lang.String)
+2018-07-25 11:32:18 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/employees/getbyname/{name}],methods=[GET]}" onto public com.example.demo.pojo.Employee com.example.demo.controller.EmployeeController.getEmployeeByName(java.lang.String)
+2018-07-25 11:32:18 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/employees/delete],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controller.EmployeeController.deleteAll()
+2018-07-25 11:32:18 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/employees/delete/{id}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controller.EmployeeController.deleteEmployee(java.lang.String)
+2018-07-25 11:32:18 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/v2/api-docs],methods=[GET]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String)
+2018-07-25 11:32:18 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-07-25 11:32:18 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-07-25 11:32:18 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-07-25 11:32:18 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-25 11:32:18 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-25 11:32:22 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6ec63f8, org.springframework.security.web.context.SecurityContextPersistenceFilter@6bedd4e4, org.springframework.security.web.header.HeaderWriterFilter@62c72501, org.springframework.security.web.authentication.logout.LogoutFilter@76bf1bb8, com.example.demo.security.JWTLoginFilter@66223d94, com.example.demo.security.JWTAuthenticationFilter@2bc7db89, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@72b6832e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@318c68d5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@479ac2cb, org.springframework.security.web.session.SessionManagementFilter@77db3d02, org.springframework.security.web.access.ExceptionTranslationFilter@41fa769c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2da99821]
+2018-07-25 11:32:22 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-25 11:32:25 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@243c4f91: startup date [Wed Jul 25 11:32:04 IST 2018]; root of context hierarchy
+2018-07-25 11:32:25 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-25 11:32:25 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-25 11:32:26 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in exceptionsHandling
+2018-07-25 11:32:28 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-07-25 11:32:28 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2018-07-25 11:32:29 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found {0} custom documentation plugin(s)
+2018-07-25 11:32:29 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2018-07-25 11:32:29 [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method addEmployee was employee-controller
+2018-07-25 11:32:29 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Request mapping: addEmployee belongs to groups: [[ResourceGroup{groupName='employee-controller', position=0, controller=com.example.demo.controller.EmployeeController}]] 
+2018-07-25 11:32:29 [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method updateEmployee was employee-controller
+2018-07-25 11:32:29 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Request mapping: updateEmployee belongs to groups: [[ResourceGroup{groupName='employee-controller', position=0, controller=com.example.demo.controller.EmployeeController}]] 
+2018-07-25 11:32:29 [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getEmployeeById was employee-controller
+2018-07-25 11:32:29 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Request mapping: getEmployeeById belongs to groups: [[ResourceGroup{groupName='employee-controller', position=0, controller=com.example.demo.controller.EmployeeController}]] 
+2018-07-25 11:32:29 [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getEmployee was employee-controller
+2018-07-25 11:32:29 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Request mapping: getEmployee belongs to groups: [[ResourceGroup{groupName='employee-controller', position=0, controller=com.example.demo.controller.EmployeeController}]] 
+2018-07-25 11:32:29 [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getEmployeeByDesc was employee-controller
+2018-07-25 11:32:29 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Request mapping: getEmployeeByDesc belongs to groups: [[ResourceGroup{groupName='employee-controller', position=0, controller=com.example.demo.controller.EmployeeController}]] 
+2018-07-25 11:32:29 [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getEmployeeByName was employee-controller
+2018-07-25 11:32:29 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Request mapping: getEmployeeByName belongs to groups: [[ResourceGroup{groupName='employee-controller', position=0, controller=com.example.demo.controller.EmployeeController}]] 
+2018-07-25 11:32:29 [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method deleteAll was employee-controller
+2018-07-25 11:32:29 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Request mapping: deleteAll belongs to groups: [[ResourceGroup{groupName='employee-controller', position=0, controller=com.example.demo.controller.EmployeeController}]] 
+2018-07-25 11:32:29 [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method deleteEmployee was employee-controller
+2018-07-25 11:32:29 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Request mapping: deleteEmployee belongs to groups: [[ResourceGroup{groupName='employee-controller', position=0, controller=com.example.demo.controller.EmployeeController}]] 
+2018-07-25 11:32:29 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Created resource listing Path: /default/employee-controller Description: employee-controller Position: 0
+2018-07-25 11:32:31 [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method addEmployee was employee-controller
+2018-07-25 11:32:31 [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method updateEmployee was employee-controller
+2018-07-25 11:32:31 [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getEmployeeById was employee-controller
+2018-07-25 11:32:31 [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getEmployee was employee-controller
+2018-07-25 11:32:31 [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getEmployeeByDesc was employee-controller
+2018-07-25 11:32:31 [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getEmployeeByName was employee-controller
+2018-07-25 11:32:31 [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method deleteAll was employee-controller
+2018-07-25 11:32:31 [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method deleteEmployee was employee-controller
+2018-07-25 11:32:32 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9010"]
+2018-07-25 11:32:33 [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-07-25 11:32:34 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9010 (http) with context path ''
+2018-07-25 11:32:34 [main] INFO  c.e.d.EmployeeManagementApplication - Started EmployeeManagementApplication in 30.577 seconds (JVM running for 37.495)
+2018-07-25 11:35:11 [http-nio-9010-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-07-25 11:35:11 [http-nio-9010-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-07-25 11:35:11 [http-nio-9010-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 51 ms
+2018-07-25 11:35:12 [http-nio-9010-exec-1] WARN  o.s.s.c.bcrypt.BCryptPasswordEncoder - Encoded password does not look like BCrypt
+2018-07-25 11:38:09 [http-nio-9010-exec-5] WARN  o.s.s.c.bcrypt.BCryptPasswordEncoder - Encoded password does not look like BCrypt
+2018-07-25 11:38:55 [http-nio-9010-exec-6] WARN  o.s.s.c.bcrypt.BCryptPasswordEncoder - Encoded password does not look like BCrypt
+2018-07-25 11:42:20 [main] INFO  c.e.d.controller.EmployeeController - Start
+2018-07-25 11:42:21 [main] INFO  c.e.d.EmployeeManagementApplication - Starting EmployeeManagementApplication on Lenovo-MP11LE5G with PID 16772 (G:\STSWorkSpace\EmployeeManagement\bin\main started by sagonugunta in G:\STSWorkSpace\EmployeeManagement)
+2018-07-25 11:42:21 [main] INFO  c.e.d.EmployeeManagementApplication - No active profile set, falling back to default profiles: default
+2018-07-25 11:42:21 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@15eb5ee5: startup date [Wed Jul 25 11:42:21 IST 2018]; root of context hierarchy
+2018-07-25 11:42:26 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9010 (http)
+2018-07-25 11:42:26 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9010"]
+2018-07-25 11:42:26 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2018-07-25 11:42:26 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-07-25 11:42:26 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_111\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:/Program Files/Java/jre1.8.0_111/bin/server;C:/Program Files/Java/jre1.8.0_111/bin;C:/Program Files/Java/jre1.8.0_111/lib/amd64;C:\oraclexe\app\oracle\product\11.2.0\server\bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Common Files\lenovo\easyplussdk\bin;C:\Program Files (x86)\Lenovo\Password Manager\;C:\Program Files (x86)\MySQL\MySQL Server 5.5\bin;C:\Program Files\Java\jdk1.8.0_111\bin;C:\Program Files\Git\cmd;C:\Program Files\Apache Software Foundation\apache-maven-3.5.2\bin;C:\Gradle\gradle-4.8.1\bin;C:\Program Files\MongoDB\Server\4.0\bin;C:\Program Files\Redis\;C:\Users\sagonugunta\Downloads\Softwares\spring-tool-suite-3.9.4.RELEASE-e4.7.3a-win32-x86_64\sts-bundle\sts-3.9.4.RELEASE;;.]
+2018-07-25 11:42:26 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-07-25 11:42:26 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 4868 ms
+2018-07-25 11:42:26 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-25 11:42:26 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-25 11:42:26 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-25 11:42:26 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-25 11:42:26 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2018-07-25 11:42:26 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-07-25 11:42:27 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-07-25 11:42:27 [main] INFO  org.mongodb.driver.cluster - Adding discovered server localhost:27017 to client view of cluster
+2018-07-25 11:42:27 [cluster-ClusterId{value='5b5814cb005c7a4184a837da', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:87}] to localhost:27017
+2018-07-25 11:42:27 [cluster-ClusterId{value='5b5814cb005c7a4184a837da', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 0]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=6884950}
+2018-07-25 11:42:27 [cluster-ClusterId{value='5b5814cb005c7a4184a837da', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Discovered cluster type of STANDALONE
+2018-07-25 11:42:29 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/employees/getbyname/{name}],methods=[GET]}" onto public com.example.demo.pojo.Employee com.example.demo.controller.EmployeeController.getEmployeeByName(java.lang.String)
+2018-07-25 11:42:29 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/employees/getbydesc/{desc}],methods=[GET]}" onto public com.example.demo.pojo.Employee com.example.demo.controller.EmployeeController.getEmployeeByDesc(java.lang.String)
+2018-07-25 11:42:29 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/employees/getbyid/{id}],methods=[GET]}" onto public com.example.demo.pojo.Employee com.example.demo.controller.EmployeeController.getEmployeeById(java.lang.String)
+2018-07-25 11:42:29 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/employees/delete/{id}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controller.EmployeeController.deleteEmployee(java.lang.String)
+2018-07-25 11:42:29 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/employees/update/{id}],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controller.EmployeeController.updateEmployee(com.example.demo.pojo.Employee,java.lang.String)
+2018-07-25 11:42:29 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/employees/delete],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controller.EmployeeController.deleteAll()
+2018-07-25 11:42:29 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/employees/add],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controller.EmployeeController.addEmployee(com.example.demo.pojo.Employee)
+2018-07-25 11:42:29 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/employees/all],methods=[GET]}" onto public java.util.List<com.example.demo.pojo.Employee> com.example.demo.controller.EmployeeController.getEmployee()
+2018-07-25 11:42:29 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/v2/api-docs],methods=[GET]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String)
+2018-07-25 11:42:29 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-07-25 11:42:29 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-07-25 11:42:29 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-07-25 11:42:29 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-25 11:42:29 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-25 11:42:30 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1e84f3c8, org.springframework.security.web.context.SecurityContextPersistenceFilter@388623ad, org.springframework.security.web.header.HeaderWriterFilter@45900b64, org.springframework.security.web.authentication.logout.LogoutFilter@4ed9f7b1, com.example.demo.security.JWTLoginFilter@5f59ea8c, com.example.demo.security.JWTAuthenticationFilter@7b2ccba5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@46e3559f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3fa21d49, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@64f9f455, org.springframework.security.web.session.SessionManagementFilter@79f90a3a, org.springframework.security.web.access.ExceptionTranslationFilter@18d003cd, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1934ad7c]
+2018-07-25 11:42:30 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-25 11:42:30 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@15eb5ee5: startup date [Wed Jul 25 11:42:21 IST 2018]; root of context hierarchy
+2018-07-25 11:42:30 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-25 11:42:30 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-25 11:42:30 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in exceptionsHandling
+2018-07-25 11:42:31 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-07-25 11:42:31 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2018-07-25 11:42:31 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found {0} custom documentation plugin(s)
+2018-07-25 11:42:31 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2018-07-25 11:42:31 [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getEmployeeByName was employee-controller
+2018-07-25 11:42:31 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Request mapping: getEmployeeByName belongs to groups: [[ResourceGroup{groupName='employee-controller', position=0, controller=com.example.demo.controller.EmployeeController}]] 
+2018-07-25 11:42:31 [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getEmployeeByDesc was employee-controller
+2018-07-25 11:42:31 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Request mapping: getEmployeeByDesc belongs to groups: [[ResourceGroup{groupName='employee-controller', position=0, controller=com.example.demo.controller.EmployeeController}]] 
+2018-07-25 11:42:31 [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getEmployeeById was employee-controller
+2018-07-25 11:42:31 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Request mapping: getEmployeeById belongs to groups: [[ResourceGroup{groupName='employee-controller', position=0, controller=com.example.demo.controller.EmployeeController}]] 
+2018-07-25 11:42:31 [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method deleteEmployee was employee-controller
+2018-07-25 11:42:31 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Request mapping: deleteEmployee belongs to groups: [[ResourceGroup{groupName='employee-controller', position=0, controller=com.example.demo.controller.EmployeeController}]] 
+2018-07-25 11:42:31 [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method updateEmployee was employee-controller
+2018-07-25 11:42:31 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Request mapping: updateEmployee belongs to groups: [[ResourceGroup{groupName='employee-controller', position=0, controller=com.example.demo.controller.EmployeeController}]] 
+2018-07-25 11:42:31 [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method deleteAll was employee-controller
+2018-07-25 11:42:31 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Request mapping: deleteAll belongs to groups: [[ResourceGroup{groupName='employee-controller', position=0, controller=com.example.demo.controller.EmployeeController}]] 
+2018-07-25 11:42:31 [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method addEmployee was employee-controller
+2018-07-25 11:42:31 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Request mapping: addEmployee belongs to groups: [[ResourceGroup{groupName='employee-controller', position=0, controller=com.example.demo.controller.EmployeeController}]] 
+2018-07-25 11:42:31 [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getEmployee was employee-controller
+2018-07-25 11:42:31 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Request mapping: getEmployee belongs to groups: [[ResourceGroup{groupName='employee-controller', position=0, controller=com.example.demo.controller.EmployeeController}]] 
+2018-07-25 11:42:31 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Created resource listing Path: /default/employee-controller Description: employee-controller Position: 0
+2018-07-25 11:42:31 [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getEmployeeByName was employee-controller
+2018-07-25 11:42:31 [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getEmployeeByDesc was employee-controller
+2018-07-25 11:42:31 [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getEmployeeById was employee-controller
+2018-07-25 11:42:31 [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method deleteEmployee was employee-controller
+2018-07-25 11:42:31 [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method updateEmployee was employee-controller
+2018-07-25 11:42:31 [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method deleteAll was employee-controller
+2018-07-25 11:42:31 [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method addEmployee was employee-controller
+2018-07-25 11:42:31 [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getEmployee was employee-controller
+2018-07-25 11:42:31 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9010"]
+2018-07-25 11:42:31 [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-07-25 11:42:32 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9010 (http) with context path ''
+2018-07-25 11:42:32 [main] INFO  c.e.d.EmployeeManagementApplication - Started EmployeeManagementApplication in 10.983 seconds (JVM running for 11.938)
+2018-07-25 11:43:41 [http-nio-9010-exec-8] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-07-25 11:43:41 [http-nio-9010-exec-8] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-07-25 11:43:42 [http-nio-9010-exec-8] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 41 ms
+2018-07-25 11:43:42 [http-nio-9010-exec-8] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+java.lang.IllegalArgumentException: There is no PasswordEncoder mapped for the id "null"
+	at org.springframework.security.crypto.password.DelegatingPasswordEncoder$UnmappedIdPasswordEncoder.matches(DelegatingPasswordEncoder.java:238)
+	at org.springframework.security.crypto.password.DelegatingPasswordEncoder.matches(DelegatingPasswordEncoder.java:198)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$LazyPasswordEncoder.matches(WebSecurityConfigurerAdapter.java:593)
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.additionalAuthenticationChecks(DaoAuthenticationProvider.java:86)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:166)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:174)
+	at com.example.demo.security.JWTLoginFilter.attemptAuthentication(JWTLoginFilter.java:31)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:66)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2018-07-25 11:43:59 [http-nio-9010-exec-2] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+java.lang.IllegalArgumentException: There is no PasswordEncoder mapped for the id "null"
+	at org.springframework.security.crypto.password.DelegatingPasswordEncoder$UnmappedIdPasswordEncoder.matches(DelegatingPasswordEncoder.java:238)
+	at org.springframework.security.crypto.password.DelegatingPasswordEncoder.matches(DelegatingPasswordEncoder.java:198)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$LazyPasswordEncoder.matches(WebSecurityConfigurerAdapter.java:593)
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.additionalAuthenticationChecks(DaoAuthenticationProvider.java:86)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:166)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:174)
+	at com.example.demo.security.JWTLoginFilter.attemptAuthentication(JWTLoginFilter.java:31)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:66)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2018-07-25 11:44:04 [http-nio-9010-exec-9] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+java.lang.IllegalArgumentException: There is no PasswordEncoder mapped for the id "null"
+	at org.springframework.security.crypto.password.DelegatingPasswordEncoder$UnmappedIdPasswordEncoder.matches(DelegatingPasswordEncoder.java:238)
+	at org.springframework.security.crypto.password.DelegatingPasswordEncoder.matches(DelegatingPasswordEncoder.java:198)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$LazyPasswordEncoder.matches(WebSecurityConfigurerAdapter.java:593)
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.additionalAuthenticationChecks(DaoAuthenticationProvider.java:86)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:166)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:174)
+	at com.example.demo.security.JWTLoginFilter.attemptAuthentication(JWTLoginFilter.java:31)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:66)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2018-07-25 12:04:35 [main] INFO  c.e.d.controller.EmployeeController - Start
+2018-07-25 12:04:36 [main] INFO  c.e.d.EmployeeManagementApplication - Starting EmployeeManagementApplication on Lenovo-MP11LE5G with PID 7592 (G:\STSWorkSpace\EmployeeManagement\bin\main started by sagonugunta in G:\STSWorkSpace\EmployeeManagement)
+2018-07-25 12:04:36 [main] INFO  c.e.d.EmployeeManagementApplication - No active profile set, falling back to default profiles: default
+2018-07-25 12:04:36 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2145b572: startup date [Wed Jul 25 12:04:36 IST 2018]; root of context hierarchy
+2018-07-25 12:04:39 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$20fc64af] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-25 12:04:39 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-25 12:04:39 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@40368a46' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-25 12:04:39 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$45d10761] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-25 12:04:39 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-25 12:04:40 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9010 (http)
+2018-07-25 12:04:40 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9010"]
+2018-07-25 12:04:40 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2018-07-25 12:04:40 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-07-25 12:04:40 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_111\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:/Program Files/Java/jre1.8.0_111/bin/server;C:/Program Files/Java/jre1.8.0_111/bin;C:/Program Files/Java/jre1.8.0_111/lib/amd64;C:\oraclexe\app\oracle\product\11.2.0\server\bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Common Files\lenovo\easyplussdk\bin;C:\Program Files (x86)\Lenovo\Password Manager\;C:\Program Files (x86)\MySQL\MySQL Server 5.5\bin;C:\Program Files\Java\jdk1.8.0_111\bin;C:\Program Files\Git\cmd;C:\Program Files\Apache Software Foundation\apache-maven-3.5.2\bin;C:\Gradle\gradle-4.8.1\bin;C:\Program Files\MongoDB\Server\4.0\bin;C:\Program Files\Redis\;C:\Users\sagonugunta\Downloads\Softwares\spring-tool-suite-3.9.4.RELEASE-e4.7.3a-win32-x86_64\sts-bundle\sts-3.9.4.RELEASE;;.]
+2018-07-25 12:04:41 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-07-25 12:04:41 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 4502 ms
+2018-07-25 12:04:41 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-25 12:04:41 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-25 12:04:41 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-25 12:04:41 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-25 12:04:41 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2018-07-25 12:04:41 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-07-25 12:04:42 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-07-25 12:04:42 [main] INFO  org.mongodb.driver.cluster - Adding discovered server localhost:27017 to client view of cluster
+2018-07-25 12:04:42 [cluster-ClusterId{value='5b581a02005c7a1da8db4a2a', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:88}] to localhost:27017
+2018-07-25 12:04:42 [cluster-ClusterId{value='5b581a02005c7a1da8db4a2a', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 0]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=5113738}
+2018-07-25 12:04:42 [cluster-ClusterId{value='5b581a02005c7a1da8db4a2a', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Discovered cluster type of STANDALONE
+2018-07-25 12:04:43 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/employees/delete/{id}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controller.EmployeeController.deleteEmployee(java.lang.String)
+2018-07-25 12:04:43 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/employees/delete],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controller.EmployeeController.deleteAll()
+2018-07-25 12:04:43 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/employees/update/{id}],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controller.EmployeeController.updateEmployee(com.example.demo.pojo.Employee,java.lang.String)
+2018-07-25 12:04:43 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/employees/add],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controller.EmployeeController.addEmployee(com.example.demo.pojo.Employee)
+2018-07-25 12:04:43 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/employees/getbyid/{id}],methods=[GET]}" onto public com.example.demo.pojo.Employee com.example.demo.controller.EmployeeController.getEmployeeById(java.lang.String)
+2018-07-25 12:04:43 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/employees/all],methods=[GET]}" onto public java.util.List<com.example.demo.pojo.Employee> com.example.demo.controller.EmployeeController.getEmployee()
+2018-07-25 12:04:43 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/employees/getbydesc/{desc}],methods=[GET]}" onto public com.example.demo.pojo.Employee com.example.demo.controller.EmployeeController.getEmployeeByDesc(java.lang.String)
+2018-07-25 12:04:43 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/employees/getbyname/{name}],methods=[GET]}" onto public com.example.demo.pojo.Employee com.example.demo.controller.EmployeeController.getEmployeeByName(java.lang.String)
+2018-07-25 12:04:43 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/v2/api-docs],methods=[GET]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String)
+2018-07-25 12:04:43 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-07-25 12:04:43 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-07-25 12:04:43 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-07-25 12:04:43 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-25 12:04:43 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-25 12:04:44 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@e829999, org.springframework.security.web.context.SecurityContextPersistenceFilter@1d0cac30, org.springframework.security.web.header.HeaderWriterFilter@6707a4bf, org.springframework.security.web.authentication.logout.LogoutFilter@468173fa, com.example.demo.security.JWTLoginFilter@66fb45e5, com.example.demo.security.JWTAuthenticationFilter@6cbe68e9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5dfe23e8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@314a31b0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6f5e16cf, org.springframework.security.web.session.SessionManagementFilter@f0a66bd, org.springframework.security.web.access.ExceptionTranslationFilter@53d2d002, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7d528cf7]
+2018-07-25 12:04:44 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-25 12:04:45 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2145b572: startup date [Wed Jul 25 12:04:36 IST 2018]; root of context hierarchy
+2018-07-25 12:04:45 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-25 12:04:45 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-25 12:04:45 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in exceptionsHandling
+2018-07-25 12:04:45 [main] INFO  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 2bfeba1e-ef2c-4e3d-afc7-3a0db67be713
+
+2018-07-25 12:04:45 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-07-25 12:04:45 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2018-07-25 12:04:45 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found {0} custom documentation plugin(s)
+2018-07-25 12:04:45 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2018-07-25 12:04:45 [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method deleteEmployee was employee-controller
+2018-07-25 12:04:45 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Request mapping: deleteEmployee belongs to groups: [[ResourceGroup{groupName='employee-controller', position=0, controller=com.example.demo.controller.EmployeeController}]] 
+2018-07-25 12:04:45 [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method deleteAll was employee-controller
+2018-07-25 12:04:45 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Request mapping: deleteAll belongs to groups: [[ResourceGroup{groupName='employee-controller', position=0, controller=com.example.demo.controller.EmployeeController}]] 
+2018-07-25 12:04:45 [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method updateEmployee was employee-controller
+2018-07-25 12:04:45 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Request mapping: updateEmployee belongs to groups: [[ResourceGroup{groupName='employee-controller', position=0, controller=com.example.demo.controller.EmployeeController}]] 
+2018-07-25 12:04:45 [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method addEmployee was employee-controller
+2018-07-25 12:04:45 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Request mapping: addEmployee belongs to groups: [[ResourceGroup{groupName='employee-controller', position=0, controller=com.example.demo.controller.EmployeeController}]] 
+2018-07-25 12:04:45 [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getEmployeeById was employee-controller
+2018-07-25 12:04:45 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Request mapping: getEmployeeById belongs to groups: [[ResourceGroup{groupName='employee-controller', position=0, controller=com.example.demo.controller.EmployeeController}]] 
+2018-07-25 12:04:45 [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getEmployee was employee-controller
+2018-07-25 12:04:45 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Request mapping: getEmployee belongs to groups: [[ResourceGroup{groupName='employee-controller', position=0, controller=com.example.demo.controller.EmployeeController}]] 
+2018-07-25 12:04:45 [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getEmployeeByDesc was employee-controller
+2018-07-25 12:04:45 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Request mapping: getEmployeeByDesc belongs to groups: [[ResourceGroup{groupName='employee-controller', position=0, controller=com.example.demo.controller.EmployeeController}]] 
+2018-07-25 12:04:45 [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getEmployeeByName was employee-controller
+2018-07-25 12:04:45 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Request mapping: getEmployeeByName belongs to groups: [[ResourceGroup{groupName='employee-controller', position=0, controller=com.example.demo.controller.EmployeeController}]] 
+2018-07-25 12:04:45 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Created resource listing Path: /default/employee-controller Description: employee-controller Position: 0
+2018-07-25 12:04:45 [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method deleteEmployee was employee-controller
+2018-07-25 12:04:45 [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method deleteAll was employee-controller
+2018-07-25 12:04:45 [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method updateEmployee was employee-controller
+2018-07-25 12:04:45 [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method addEmployee was employee-controller
+2018-07-25 12:04:45 [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getEmployeeById was employee-controller
+2018-07-25 12:04:45 [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getEmployee was employee-controller
+2018-07-25 12:04:45 [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getEmployeeByDesc was employee-controller
+2018-07-25 12:04:45 [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getEmployeeByName was employee-controller
+2018-07-25 12:04:45 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9010"]
+2018-07-25 12:04:45 [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-07-25 12:04:45 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9010 (http) with context path ''
+2018-07-25 12:04:45 [main] INFO  c.e.d.EmployeeManagementApplication - Started EmployeeManagementApplication in 9.999 seconds (JVM running for 10.867)
+2018-07-25 12:04:54 [http-nio-9010-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-07-25 12:04:54 [http-nio-9010-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-07-25 12:04:54 [http-nio-9010-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 30 ms
+2018-07-25 12:04:54 [http-nio-9010-exec-1] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+java.lang.IllegalArgumentException: There is no PasswordEncoder mapped for the id "null"
+	at org.springframework.security.crypto.password.DelegatingPasswordEncoder$UnmappedIdPasswordEncoder.matches(DelegatingPasswordEncoder.java:238)
+	at org.springframework.security.crypto.password.DelegatingPasswordEncoder.matches(DelegatingPasswordEncoder.java:198)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$LazyPasswordEncoder.matches(WebSecurityConfigurerAdapter.java:593)
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.additionalAuthenticationChecks(DaoAuthenticationProvider.java:86)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:166)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:174)
+	at com.example.demo.security.JWTLoginFilter.attemptAuthentication(JWTLoginFilter.java:31)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:66)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2018-07-25 12:05:05 [http-nio-9010-exec-3] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+java.lang.IllegalArgumentException: There is no PasswordEncoder mapped for the id "null"
+	at org.springframework.security.crypto.password.DelegatingPasswordEncoder$UnmappedIdPasswordEncoder.matches(DelegatingPasswordEncoder.java:238)
+	at org.springframework.security.crypto.password.DelegatingPasswordEncoder.matches(DelegatingPasswordEncoder.java:198)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$LazyPasswordEncoder.matches(WebSecurityConfigurerAdapter.java:593)
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.additionalAuthenticationChecks(DaoAuthenticationProvider.java:86)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:166)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:174)
+	at com.example.demo.security.JWTLoginFilter.attemptAuthentication(JWTLoginFilter.java:31)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:66)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2018-07-25 12:05:07 [http-nio-9010-exec-4] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+java.lang.IllegalArgumentException: There is no PasswordEncoder mapped for the id "null"
+	at org.springframework.security.crypto.password.DelegatingPasswordEncoder$UnmappedIdPasswordEncoder.matches(DelegatingPasswordEncoder.java:238)
+	at org.springframework.security.crypto.password.DelegatingPasswordEncoder.matches(DelegatingPasswordEncoder.java:198)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$LazyPasswordEncoder.matches(WebSecurityConfigurerAdapter.java:593)
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.additionalAuthenticationChecks(DaoAuthenticationProvider.java:86)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:166)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:174)
+	at com.example.demo.security.JWTLoginFilter.attemptAuthentication(JWTLoginFilter.java:31)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:66)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2018-07-25 12:05:08 [http-nio-9010-exec-6] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+java.lang.IllegalArgumentException: There is no PasswordEncoder mapped for the id "null"
+	at org.springframework.security.crypto.password.DelegatingPasswordEncoder$UnmappedIdPasswordEncoder.matches(DelegatingPasswordEncoder.java:238)
+	at org.springframework.security.crypto.password.DelegatingPasswordEncoder.matches(DelegatingPasswordEncoder.java:198)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$LazyPasswordEncoder.matches(WebSecurityConfigurerAdapter.java:593)
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.additionalAuthenticationChecks(DaoAuthenticationProvider.java:86)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:166)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:174)
+	at com.example.demo.security.JWTLoginFilter.attemptAuthentication(JWTLoginFilter.java:31)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:66)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2018-07-25 12:05:08 [http-nio-9010-exec-5] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+java.lang.IllegalArgumentException: There is no PasswordEncoder mapped for the id "null"
+	at org.springframework.security.crypto.password.DelegatingPasswordEncoder$UnmappedIdPasswordEncoder.matches(DelegatingPasswordEncoder.java:238)
+	at org.springframework.security.crypto.password.DelegatingPasswordEncoder.matches(DelegatingPasswordEncoder.java:198)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$LazyPasswordEncoder.matches(WebSecurityConfigurerAdapter.java:593)
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.additionalAuthenticationChecks(DaoAuthenticationProvider.java:86)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:166)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:174)
+	at com.example.demo.security.JWTLoginFilter.attemptAuthentication(JWTLoginFilter.java:31)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:66)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2018-07-25 12:05:09 [http-nio-9010-exec-7] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+java.lang.IllegalArgumentException: There is no PasswordEncoder mapped for the id "null"
+	at org.springframework.security.crypto.password.DelegatingPasswordEncoder$UnmappedIdPasswordEncoder.matches(DelegatingPasswordEncoder.java:238)
+	at org.springframework.security.crypto.password.DelegatingPasswordEncoder.matches(DelegatingPasswordEncoder.java:198)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$LazyPasswordEncoder.matches(WebSecurityConfigurerAdapter.java:593)
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.additionalAuthenticationChecks(DaoAuthenticationProvider.java:86)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:166)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:174)
+	at com.example.demo.security.JWTLoginFilter.attemptAuthentication(JWTLoginFilter.java:31)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:66)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2018-07-25 12:05:10 [http-nio-9010-exec-8] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+java.lang.IllegalArgumentException: There is no PasswordEncoder mapped for the id "null"
+	at org.springframework.security.crypto.password.DelegatingPasswordEncoder$UnmappedIdPasswordEncoder.matches(DelegatingPasswordEncoder.java:238)
+	at org.springframework.security.crypto.password.DelegatingPasswordEncoder.matches(DelegatingPasswordEncoder.java:198)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$LazyPasswordEncoder.matches(WebSecurityConfigurerAdapter.java:593)
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.additionalAuthenticationChecks(DaoAuthenticationProvider.java:86)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:166)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:174)
+	at com.example.demo.security.JWTLoginFilter.attemptAuthentication(JWTLoginFilter.java:31)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:66)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2018-07-25 12:05:10 [http-nio-9010-exec-9] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+java.lang.IllegalArgumentException: There is no PasswordEncoder mapped for the id "null"
+	at org.springframework.security.crypto.password.DelegatingPasswordEncoder$UnmappedIdPasswordEncoder.matches(DelegatingPasswordEncoder.java:238)
+	at org.springframework.security.crypto.password.DelegatingPasswordEncoder.matches(DelegatingPasswordEncoder.java:198)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$LazyPasswordEncoder.matches(WebSecurityConfigurerAdapter.java:593)
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.additionalAuthenticationChecks(DaoAuthenticationProvider.java:86)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:166)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:174)
+	at com.example.demo.security.JWTLoginFilter.attemptAuthentication(JWTLoginFilter.java:31)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:66)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2018-07-25 12:05:11 [http-nio-9010-exec-10] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+java.lang.IllegalArgumentException: There is no PasswordEncoder mapped for the id "null"
+	at org.springframework.security.crypto.password.DelegatingPasswordEncoder$UnmappedIdPasswordEncoder.matches(DelegatingPasswordEncoder.java:238)
+	at org.springframework.security.crypto.password.DelegatingPasswordEncoder.matches(DelegatingPasswordEncoder.java:198)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$LazyPasswordEncoder.matches(WebSecurityConfigurerAdapter.java:593)
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.additionalAuthenticationChecks(DaoAuthenticationProvider.java:86)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:166)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:174)
+	at com.example.demo.security.JWTLoginFilter.attemptAuthentication(JWTLoginFilter.java:31)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:66)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2018-07-25 12:05:11 [http-nio-9010-exec-2] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+java.lang.IllegalArgumentException: There is no PasswordEncoder mapped for the id "null"
+	at org.springframework.security.crypto.password.DelegatingPasswordEncoder$UnmappedIdPasswordEncoder.matches(DelegatingPasswordEncoder.java:238)
+	at org.springframework.security.crypto.password.DelegatingPasswordEncoder.matches(DelegatingPasswordEncoder.java:198)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$LazyPasswordEncoder.matches(WebSecurityConfigurerAdapter.java:593)
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.additionalAuthenticationChecks(DaoAuthenticationProvider.java:86)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:166)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:174)
+	at com.example.demo.security.JWTLoginFilter.attemptAuthentication(JWTLoginFilter.java:31)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:66)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2018-07-25 12:05:12 [http-nio-9010-exec-1] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+java.lang.IllegalArgumentException: There is no PasswordEncoder mapped for the id "null"
+	at org.springframework.security.crypto.password.DelegatingPasswordEncoder$UnmappedIdPasswordEncoder.matches(DelegatingPasswordEncoder.java:238)
+	at org.springframework.security.crypto.password.DelegatingPasswordEncoder.matches(DelegatingPasswordEncoder.java:198)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$LazyPasswordEncoder.matches(WebSecurityConfigurerAdapter.java:593)
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.additionalAuthenticationChecks(DaoAuthenticationProvider.java:86)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:166)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:174)
+	at com.example.demo.security.JWTLoginFilter.attemptAuthentication(JWTLoginFilter.java:31)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:66)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2018-07-25 12:15:39 [main] INFO  c.e.d.controller.EmployeeController - Start
+2018-07-25 12:15:40 [main] INFO  c.e.d.EmployeeManagementApplication - Starting EmployeeManagementApplication on Lenovo-MP11LE5G with PID 16440 (G:\STSWorkSpace\EmployeeManagement\bin\main started by sagonugunta in G:\STSWorkSpace\EmployeeManagement)
+2018-07-25 12:15:40 [main] INFO  c.e.d.EmployeeManagementApplication - No active profile set, falling back to default profiles: default
+2018-07-25 12:15:40 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7ed7259e: startup date [Wed Jul 25 12:15:40 IST 2018]; root of context hierarchy
+2018-07-25 12:15:43 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$4ec0ab03] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-25 12:15:43 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-25 12:15:43 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@60d1b21f' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-25 12:15:43 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$73954db5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-25 12:15:43 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-25 12:15:44 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9010 (http)
+2018-07-25 12:15:44 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9010"]
+2018-07-25 12:15:44 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2018-07-25 12:15:44 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-07-25 12:15:44 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_111\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:/Program Files/Java/jre1.8.0_111/bin/server;C:/Program Files/Java/jre1.8.0_111/bin;C:/Program Files/Java/jre1.8.0_111/lib/amd64;C:\oraclexe\app\oracle\product\11.2.0\server\bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Common Files\lenovo\easyplussdk\bin;C:\Program Files (x86)\Lenovo\Password Manager\;C:\Program Files (x86)\MySQL\MySQL Server 5.5\bin;C:\Program Files\Java\jdk1.8.0_111\bin;C:\Program Files\Git\cmd;C:\Program Files\Apache Software Foundation\apache-maven-3.5.2\bin;C:\Gradle\gradle-4.8.1\bin;C:\Program Files\MongoDB\Server\4.0\bin;C:\Program Files\Redis\;C:\Users\sagonugunta\Downloads\Softwares\spring-tool-suite-3.9.4.RELEASE-e4.7.3a-win32-x86_64\sts-bundle\sts-3.9.4.RELEASE;;.]
+2018-07-25 12:15:45 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-07-25 12:15:45 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 4314 ms
+2018-07-25 12:15:45 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-25 12:15:45 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-25 12:15:45 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-25 12:15:45 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-25 12:15:45 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2018-07-25 12:15:45 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-07-25 12:15:46 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-07-25 12:15:46 [main] INFO  org.mongodb.driver.cluster - Adding discovered server localhost:27017 to client view of cluster
+2018-07-25 12:15:46 [cluster-ClusterId{value='5b581c9a005c7a4038c7d630', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:89}] to localhost:27017
+2018-07-25 12:15:46 [cluster-ClusterId{value='5b581c9a005c7a4038c7d630', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 0]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=14365680}
+2018-07-25 12:15:46 [cluster-ClusterId{value='5b581c9a005c7a4038c7d630', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Discovered cluster type of STANDALONE
+2018-07-25 12:15:47 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/employees/getbydesc/{desc}],methods=[GET]}" onto public com.example.demo.pojo.Employee com.example.demo.controller.EmployeeController.getEmployeeByDesc(java.lang.String)
+2018-07-25 12:15:47 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/employees/getbyname/{name}],methods=[GET]}" onto public com.example.demo.pojo.Employee com.example.demo.controller.EmployeeController.getEmployeeByName(java.lang.String)
+2018-07-25 12:15:47 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/employees/delete/{id}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controller.EmployeeController.deleteEmployee(java.lang.String)
+2018-07-25 12:15:47 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/employees/all],methods=[GET]}" onto public java.util.List<com.example.demo.pojo.Employee> com.example.demo.controller.EmployeeController.getEmployee()
+2018-07-25 12:15:47 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/employees/delete],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controller.EmployeeController.deleteAll()
+2018-07-25 12:15:47 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/employees/add],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controller.EmployeeController.addEmployee(com.example.demo.pojo.Employee)
+2018-07-25 12:15:47 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/employees/update/{id}],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controller.EmployeeController.updateEmployee(com.example.demo.pojo.Employee,java.lang.String)
+2018-07-25 12:15:47 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/employees/getbyid/{id}],methods=[GET]}" onto public com.example.demo.pojo.Employee com.example.demo.controller.EmployeeController.getEmployeeById(java.lang.String)
+2018-07-25 12:15:47 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/v2/api-docs],methods=[GET]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String)
+2018-07-25 12:15:47 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-07-25 12:15:47 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-07-25 12:15:47 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-07-25 12:15:47 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-25 12:15:47 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-25 12:15:48 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1200458e, org.springframework.security.web.context.SecurityContextPersistenceFilter@71370fec, org.springframework.security.web.header.HeaderWriterFilter@5df63359, org.springframework.security.web.authentication.logout.LogoutFilter@79d3473e, com.example.demo.security.JWTLoginFilter@5fcd1c5f, com.example.demo.security.JWTAuthenticationFilter@3cc30dee, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3fc7c734, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@583fb274, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7d528cf7, org.springframework.security.web.session.SessionManagementFilter@5b39a3e6, org.springframework.security.web.access.ExceptionTranslationFilter@718f805a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1ff15a50]
+2018-07-25 12:15:48 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-25 12:15:48 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7ed7259e: startup date [Wed Jul 25 12:15:40 IST 2018]; root of context hierarchy
+2018-07-25 12:15:48 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-25 12:15:48 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-25 12:15:48 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in exceptionsHandling
+2018-07-25 12:15:49 [main] INFO  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 58ee0bc1-b211-4f9f-b450-03a9203cb4f7
+
+2018-07-25 12:15:49 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-07-25 12:15:49 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2018-07-25 12:15:49 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found {0} custom documentation plugin(s)
+2018-07-25 12:15:49 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2018-07-25 12:15:49 [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getEmployeeByDesc was employee-controller
+2018-07-25 12:15:49 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Request mapping: getEmployeeByDesc belongs to groups: [[ResourceGroup{groupName='employee-controller', position=0, controller=com.example.demo.controller.EmployeeController}]] 
+2018-07-25 12:15:49 [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getEmployeeByName was employee-controller
+2018-07-25 12:15:49 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Request mapping: getEmployeeByName belongs to groups: [[ResourceGroup{groupName='employee-controller', position=0, controller=com.example.demo.controller.EmployeeController}]] 
+2018-07-25 12:15:49 [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method deleteEmployee was employee-controller
+2018-07-25 12:15:49 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Request mapping: deleteEmployee belongs to groups: [[ResourceGroup{groupName='employee-controller', position=0, controller=com.example.demo.controller.EmployeeController}]] 
+2018-07-25 12:15:49 [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getEmployee was employee-controller
+2018-07-25 12:15:49 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Request mapping: getEmployee belongs to groups: [[ResourceGroup{groupName='employee-controller', position=0, controller=com.example.demo.controller.EmployeeController}]] 
+2018-07-25 12:15:49 [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method deleteAll was employee-controller
+2018-07-25 12:15:49 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Request mapping: deleteAll belongs to groups: [[ResourceGroup{groupName='employee-controller', position=0, controller=com.example.demo.controller.EmployeeController}]] 
+2018-07-25 12:15:49 [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method addEmployee was employee-controller
+2018-07-25 12:15:49 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Request mapping: addEmployee belongs to groups: [[ResourceGroup{groupName='employee-controller', position=0, controller=com.example.demo.controller.EmployeeController}]] 
+2018-07-25 12:15:49 [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method updateEmployee was employee-controller
+2018-07-25 12:15:49 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Request mapping: updateEmployee belongs to groups: [[ResourceGroup{groupName='employee-controller', position=0, controller=com.example.demo.controller.EmployeeController}]] 
+2018-07-25 12:15:49 [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getEmployeeById was employee-controller
+2018-07-25 12:15:49 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Request mapping: getEmployeeById belongs to groups: [[ResourceGroup{groupName='employee-controller', position=0, controller=com.example.demo.controller.EmployeeController}]] 
+2018-07-25 12:15:49 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Created resource listing Path: /default/employee-controller Description: employee-controller Position: 0
+2018-07-25 12:15:49 [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getEmployeeByDesc was employee-controller
+2018-07-25 12:15:49 [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getEmployeeByName was employee-controller
+2018-07-25 12:15:49 [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method deleteEmployee was employee-controller
+2018-07-25 12:15:49 [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getEmployee was employee-controller
+2018-07-25 12:15:49 [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method deleteAll was employee-controller
+2018-07-25 12:15:49 [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method addEmployee was employee-controller
+2018-07-25 12:15:49 [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method updateEmployee was employee-controller
+2018-07-25 12:15:49 [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getEmployeeById was employee-controller
+2018-07-25 12:15:49 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9010"]
+2018-07-25 12:15:49 [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-07-25 12:15:49 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9010 (http) with context path ''
+2018-07-25 12:15:49 [main] INFO  c.e.d.EmployeeManagementApplication - Started EmployeeManagementApplication in 9.68 seconds (JVM running for 10.516)
+2018-07-25 12:16:46 [http-nio-9010-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-07-25 12:16:46 [http-nio-9010-exec-2] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-07-25 12:16:46 [http-nio-9010-exec-2] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 30 ms
+2018-07-25 12:23:12 [http-nio-9010-exec-10] INFO  c.e.d.EmployeeAOP$$EnhancerBySpringCGLIB$$d4dc9008 -  AOP is getting called before execution(List com.example.demo.controller.EmployeeController.getEmployee())
+2018-07-25 12:23:12 [http-nio-9010-exec-10] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:90}] to localhost:27017
+2018-07-25 12:24:36 [http-nio-9010-exec-3] INFO  c.e.d.EmployeeAOP$$EnhancerBySpringCGLIB$$d4dc9008 -  AOP is getting called before execution(List com.example.demo.controller.EmployeeController.getEmployee())
+2018-07-25 12:24:53 [http-nio-9010-exec-4] INFO  c.e.d.EmployeeAOP$$EnhancerBySpringCGLIB$$d4dc9008 -  AOP is getting called before execution(ResponseEntity com.example.demo.controller.EmployeeController.addEmployee(Employee))
+2018-07-25 12:25:06 [http-nio-9010-exec-5] INFO  c.e.d.EmployeeAOP$$EnhancerBySpringCGLIB$$d4dc9008 -  AOP is getting called before execution(List com.example.demo.controller.EmployeeController.getEmployee())
+2018-07-25 12:53:47 [main] INFO  c.e.d.controller.EmployeeController - Start
+2018-07-25 12:53:48 [main] INFO  c.e.d.EmployeeManagementApplication - Starting EmployeeManagementApplication on Lenovo-MP11LE5G with PID 12492 (G:\STSWorkSpace\EmployeeManagement\bin\main started by sagonugunta in G:\STSWorkSpace\EmployeeManagement)
+2018-07-25 12:53:48 [main] INFO  c.e.d.EmployeeManagementApplication - No active profile set, falling back to default profiles: default
+2018-07-25 12:53:48 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1ea9f6af: startup date [Wed Jul 25 12:53:48 IST 2018]; root of context hierarchy
+2018-07-25 12:53:51 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$3a6d5d9b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-25 12:53:51 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-25 12:53:51 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@15bc339' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-25 12:53:51 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$5f42004d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-25 12:53:51 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-25 12:53:52 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9010 (http)
+2018-07-25 12:53:53 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9010"]
+2018-07-25 12:53:53 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2018-07-25 12:53:53 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-07-25 12:53:53 [localhost-startStop-1] INFO  o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jre1.8.0_111\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:/Program Files/Java/jre1.8.0_111/bin/server;C:/Program Files/Java/jre1.8.0_111/bin;C:/Program Files/Java/jre1.8.0_111/lib/amd64;C:\oraclexe\app\oracle\product\11.2.0\server\bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Common Files\lenovo\easyplussdk\bin;C:\Program Files (x86)\Lenovo\Password Manager\;C:\Program Files (x86)\MySQL\MySQL Server 5.5\bin;C:\Program Files\Java\jdk1.8.0_111\bin;C:\Program Files\Git\cmd;C:\Program Files\Apache Software Foundation\apache-maven-3.5.2\bin;C:\Gradle\gradle-4.8.1\bin;C:\Program Files\MongoDB\Server\4.0\bin;C:\Program Files\Redis\;C:\Users\sagonugunta\Downloads\Softwares\spring-tool-suite-3.9.4.RELEASE-e4.7.3a-win32-x86_64\sts-bundle\sts-3.9.4.RELEASE;;.]
+2018-07-25 12:53:53 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-07-25 12:53:53 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 4560 ms
+2018-07-25 12:53:53 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-25 12:53:53 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-25 12:53:53 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-25 12:53:53 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-25 12:53:53 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+2018-07-25 12:53:53 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-07-25 12:53:54 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-07-25 12:53:54 [main] INFO  org.mongodb.driver.cluster - Adding discovered server localhost:27017 to client view of cluster
+2018-07-25 12:53:54 [cluster-ClusterId{value='5b58258a639c1030cc8f2c1a', description='null'}-localhost:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:91}] to localhost:27017
+2018-07-25 12:53:54 [cluster-ClusterId{value='5b58258a639c1030cc8f2c1a', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 0]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=4446601}
+2018-07-25 12:53:54 [cluster-ClusterId{value='5b58258a639c1030cc8f2c1a', description='null'}-localhost:27017] INFO  org.mongodb.driver.cluster - Discovered cluster type of STANDALONE
+2018-07-25 12:53:56 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/employees/delete/{id}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controller.EmployeeController.deleteEmployee(java.lang.String)
+2018-07-25 12:53:56 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/employees/add],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controller.EmployeeController.addEmployee(com.example.demo.pojo.Employee)
+2018-07-25 12:53:56 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/employees/all],methods=[GET]}" onto public java.util.List<com.example.demo.pojo.Employee> com.example.demo.controller.EmployeeController.getEmployee()
+2018-07-25 12:53:56 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/employees/delete],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controller.EmployeeController.deleteAll()
+2018-07-25 12:53:56 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/employees/update/{id}],methods=[PUT]}" onto public org.springframework.http.ResponseEntity<?> com.example.demo.controller.EmployeeController.updateEmployee(com.example.demo.pojo.Employee,java.lang.String)
+2018-07-25 12:53:56 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/employees/getbyid/{id}],methods=[GET]}" onto public com.example.demo.pojo.Employee com.example.demo.controller.EmployeeController.getEmployeeById(java.lang.String)
+2018-07-25 12:53:56 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/employees/getbyname/{name}],methods=[GET]}" onto public com.example.demo.pojo.Employee com.example.demo.controller.EmployeeController.getEmployeeByName(java.lang.String)
+2018-07-25 12:53:56 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/employees/getbydesc/{desc}],methods=[GET]}" onto public com.example.demo.pojo.Employee com.example.demo.controller.EmployeeController.getEmployeeByDesc(java.lang.String)
+2018-07-25 12:53:56 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/v2/api-docs],methods=[GET]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String)
+2018-07-25 12:53:56 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-07-25 12:53:56 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-07-25 12:53:56 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-07-25 12:53:56 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-25 12:53:56 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-25 12:53:56 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@70a898b0, org.springframework.security.web.context.SecurityContextPersistenceFilter@27e2287c, org.springframework.security.web.header.HeaderWriterFilter@468173fa, org.springframework.security.web.authentication.logout.LogoutFilter@52226e57, com.example.demo.security.JWTLoginFilter@7bdf61ad, com.example.demo.security.JWTAuthenticationFilter@54336976, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2cd388f5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2c829dbc, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@f25f48a, org.springframework.security.web.session.SessionManagementFilter@6f5bd362, org.springframework.security.web.access.ExceptionTranslationFilter@4dad0eed, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@51fc862e]
+2018-07-25 12:53:56 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-25 12:53:57 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1ea9f6af: startup date [Wed Jul 25 12:53:48 IST 2018]; root of context hierarchy
+2018-07-25 12:53:57 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-25 12:53:57 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-25 12:53:57 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in exceptionsHandling
+2018-07-25 12:53:57 [main] INFO  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 2ec40f6b-242d-4f88-8213-02f3089155c2
+
+2018-07-25 12:53:57 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2018-07-25 12:53:57 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+2018-07-25 12:53:57 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found {0} custom documentation plugin(s)
+2018-07-25 12:53:57 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+2018-07-25 12:53:57 [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method deleteEmployee was employee-controller
+2018-07-25 12:53:57 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Request mapping: deleteEmployee belongs to groups: [[ResourceGroup{groupName='employee-controller', position=0, controller=com.example.demo.controller.EmployeeController}]] 
+2018-07-25 12:53:57 [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method addEmployee was employee-controller
+2018-07-25 12:53:57 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Request mapping: addEmployee belongs to groups: [[ResourceGroup{groupName='employee-controller', position=0, controller=com.example.demo.controller.EmployeeController}]] 
+2018-07-25 12:53:57 [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getEmployee was employee-controller
+2018-07-25 12:53:57 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Request mapping: getEmployee belongs to groups: [[ResourceGroup{groupName='employee-controller', position=0, controller=com.example.demo.controller.EmployeeController}]] 
+2018-07-25 12:53:57 [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method deleteAll was employee-controller
+2018-07-25 12:53:57 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Request mapping: deleteAll belongs to groups: [[ResourceGroup{groupName='employee-controller', position=0, controller=com.example.demo.controller.EmployeeController}]] 
+2018-07-25 12:53:57 [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method updateEmployee was employee-controller
+2018-07-25 12:53:57 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Request mapping: updateEmployee belongs to groups: [[ResourceGroup{groupName='employee-controller', position=0, controller=com.example.demo.controller.EmployeeController}]] 
+2018-07-25 12:53:57 [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getEmployeeById was employee-controller
+2018-07-25 12:53:57 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Request mapping: getEmployeeById belongs to groups: [[ResourceGroup{groupName='employee-controller', position=0, controller=com.example.demo.controller.EmployeeController}]] 
+2018-07-25 12:53:57 [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getEmployeeByName was employee-controller
+2018-07-25 12:53:57 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Request mapping: getEmployeeByName belongs to groups: [[ResourceGroup{groupName='employee-controller', position=0, controller=com.example.demo.controller.EmployeeController}]] 
+2018-07-25 12:53:57 [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getEmployeeByDesc was employee-controller
+2018-07-25 12:53:57 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Request mapping: getEmployeeByDesc belongs to groups: [[ResourceGroup{groupName='employee-controller', position=0, controller=com.example.demo.controller.EmployeeController}]] 
+2018-07-25 12:53:58 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Created resource listing Path: /default/employee-controller Description: employee-controller Position: 0
+2018-07-25 12:53:58 [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method deleteEmployee was employee-controller
+2018-07-25 12:53:58 [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method addEmployee was employee-controller
+2018-07-25 12:53:58 [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getEmployee was employee-controller
+2018-07-25 12:53:58 [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method deleteAll was employee-controller
+2018-07-25 12:53:58 [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method updateEmployee was employee-controller
+2018-07-25 12:53:58 [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getEmployeeById was employee-controller
+2018-07-25 12:53:58 [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getEmployeeByName was employee-controller
+2018-07-25 12:53:58 [main] INFO  s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getEmployeeByDesc was employee-controller
+2018-07-25 12:53:58 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9010"]
+2018-07-25 12:53:58 [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2018-07-25 12:53:58 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9010 (http) with context path ''
+2018-07-25 12:53:58 [main] INFO  c.e.d.EmployeeManagementApplication - Started EmployeeManagementApplication in 10.418 seconds (JVM running for 11.343)
+2018-07-25 12:54:43 [http-nio-9010-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-07-25 12:54:43 [http-nio-9010-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2018-07-25 12:54:43 [http-nio-9010-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 38 ms
+2018-07-25 12:55:35 [http-nio-9010-exec-3] INFO  c.e.d.EmployeeAOP$$EnhancerBySpringCGLIB$$c08942a0 -  AOP is getting called before execution(List com.example.demo.controller.EmployeeController.getEmployee())
+2018-07-25 12:55:35 [http-nio-9010-exec-3] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:92}] to localhost:27017

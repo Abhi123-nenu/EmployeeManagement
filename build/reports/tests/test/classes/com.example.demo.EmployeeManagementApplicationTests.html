@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class com.example.demo.EmployeeManagementApplicationTests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class com.example.demo.EmployeeManagementApplicationTests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.example.demo.html">com.example.demo</a> &gt; EmployeeManagementApplicationTests</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">4</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.300s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">getEmpTest</td>
+<td class="success">0.005s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">getEmpbyDescTest</td>
+<td class="success">0.006s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">getEmpbyIdTest</td>
+<td class="success">0.284s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">getEmpbyNameTest</td>
+<td class="success">0.005s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>13:05:32,863 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+13:05:32,864 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.groovy]
+13:05:32,864 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [file:/D:/STSWorkSpace/EmployeeManagement/build/resources/main/logback.xml]
+13:05:33,003 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
+13:05:33,012 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [org.springframework.cloud.sleuth.zipkin] to OFF
+13:05:33,012 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+13:05:33,018 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [CONSOLE]
+13:05:33,026 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+13:05:33,030 |-WARN in ch.qos.logback.classic.encoder.PatternLayoutEncoder@294749ce - As of version 1.2.0 &quot;immediateFlush&quot; property should be set within the enclosing Appender.
+13:05:33,030 |-WARN in ch.qos.logback.classic.encoder.PatternLayoutEncoder@294749ce - Please move &quot;immediateFlush&quot; property into the enclosing appender.
+13:05:33,136 |-WARN in ch.qos.logback.classic.encoder.PatternLayoutEncoder@294749ce - Setting the &quot;immediateFlush&quot; property of the enclosing appender to false
+13:05:33,137 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
+13:05:33,143 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [ROLLING]
+13:05:33,155 |-INFO in c.q.l.core.rolling.SizeAndTimeBasedRollingPolicy@1913071057 - Archive files will be limited to [10 MB] each.
+13:05:33,159 |-INFO in c.q.l.core.rolling.SizeAndTimeBasedRollingPolicy@1913071057 - No compression will be used
+13:05:33,161 |-INFO in c.q.l.core.rolling.SizeAndTimeBasedRollingPolicy@1913071057 - Will use the pattern LOG_FILE_IS_UNDEFINED-%d{yyyy-MM-dd}.%i.log for the active file
+13:05:33,166 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@6c143c77 - The date pattern is 'yyyy-MM-dd' from file name pattern 'LOG_FILE_IS_UNDEFINED-%d{yyyy-MM-dd}.%i.log'.
+13:05:33,166 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@6c143c77 - Roll-over at midnight.
+13:05:33,174 |-INFO in ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP@6c143c77 - Setting initial period to Fri Jul 27 13:03:52 IST 2018
+13:05:33,176 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+13:05:33,188 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[ROLLING] - Active log file name: LOG_FILE_IS_UNDEFINED
+13:05:33,188 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[ROLLING] - File property is set to [LOG_FILE_IS_UNDEFINED]
+13:05:33,191 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to INFO
+13:05:33,191 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [ROLLING] to Logger[ROOT]
+13:05:33,192 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [CONSOLE] to Logger[ROOT]
+13:05:33,192 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
+13:05:33,193 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@125fbb32 - Registering current configuration as safe fallback point
+
+13:05:33.356 [INFO ] o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.demo.EmployeeManagementApplicationTests], using SpringBootContextLoader
+13:05:33.369 [INFO ] o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.example.demo.EmployeeManagementApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+13:05:33.370 [INFO ] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.demo.EmployeeManagementApplicationTests]: EmployeeManagementApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+13:05:33.609 [INFO ] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.demo.EmployeeManagementApplication for test class com.example.demo.EmployeeManagementApplicationTests
+13:05:33.897 [INFO ] o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+13:05:33.933 [INFO ] o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1bf9e8fb, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@3096faa5, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@74d0a27d, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@1618f68b, org.springframework.test.context.support.DirtiesContextTestExecutionListener@42727a83, org.springframework.test.context.transaction.TransactionalTestExecutionListener@4536f3ba, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@3484622b, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@65f9769e, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@340ebec0, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@46d730d8, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@51d59713, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@7f364631]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.0.3.RELEASE)
+
+13:05:34.423 [INFO ] c.e.d.EmployeeManagementApplicationTests - Starting EmployeeManagementApplicationTests on OPBLR-PF1950A2 with PID 16196 (started by sagonugunta in D:\STSWorkSpace\EmployeeManagement)
+13:05:34.424 [INFO ] c.e.d.EmployeeManagementApplicationTests - No active profile set, falling back to default profiles: default
+13:05:34.484 [INFO ] o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@580fc813: startup date [Fri Jul 27 13:05:34 IST 2018]; root of context hierarchy
+13:05:36.940 [INFO ] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$9fdc3c9b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+13:05:37.133 [INFO ] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+13:05:37.136 [INFO ] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@14da7296' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+13:05:37.149 [INFO ] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$c4b0df4d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+13:05:37.166 [INFO ] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+13:05:37.927 [INFO ] o.m.d.cluster - Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+13:05:37.927 [INFO ] o.m.d.cluster - Adding discovered server localhost:27017 to client view of cluster
+13:05:38.048 [INFO ] o.m.d.connection - Opened connection [connectionId{localValue:1, serverValue:4}] to localhost:27017
+13:05:38.058 [INFO ] o.m.d.cluster - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 0]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=5561050}
+13:05:38.061 [INFO ] o.m.d.cluster - Discovered cluster type of STANDALONE
+13:05:39.549 [INFO ] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/employees/getbydesc/{desc}],methods=[GET]}&quot; onto public com.example.demo.pojo.Employee com.example.demo.controller.EmployeeController.getEmployeeByDesc(java.lang.String)
+13:05:39.551 [INFO ] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/employees/getbyname/{name}],methods=[GET]}&quot; onto public com.example.demo.pojo.Employee com.example.demo.controller.EmployeeController.getEmployeeByName(java.lang.String)
+13:05:39.552 [INFO ] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/employees/getbyid/{id}],methods=[GET]}&quot; onto public com.example.demo.pojo.Employee com.example.demo.controller.EmployeeController.getEmployeeById(java.lang.String)
+13:05:39.553 [INFO ] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/employees/all],methods=[GET]}&quot; onto public java.util.List&lt;com.example.demo.pojo.Employee&gt; com.example.demo.controller.EmployeeController.getEmployee()
+13:05:39.554 [INFO ] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/employees/update/{id}],methods=[PUT]}&quot; onto public org.springframework.http.ResponseEntity&lt;?&gt; com.example.demo.controller.EmployeeController.updateEmployee(com.example.demo.pojo.Employee,java.lang.String)
+13:05:39.555 [INFO ] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/employees/delete/{id}],methods=[DELETE]}&quot; onto public org.springframework.http.ResponseEntity&lt;?&gt; com.example.demo.controller.EmployeeController.deleteEmployee(java.lang.String)
+13:05:39.556 [INFO ] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/employees/delete],methods=[DELETE]}&quot; onto public org.springframework.http.ResponseEntity&lt;?&gt; com.example.demo.controller.EmployeeController.deleteAll()
+13:05:39.557 [INFO ] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/employees/add],methods=[POST]}&quot; onto public org.springframework.http.ResponseEntity&lt;?&gt; com.example.demo.controller.EmployeeController.addEmployee(com.example.demo.pojo.Employee)
+13:05:39.559 [INFO ] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/v2/api-docs],methods=[GET]}&quot; onto public org.springframework.http.ResponseEntity&lt;springfox.documentation.spring.web.json.Json&gt; springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String)
+13:05:39.564 [INFO ] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/configuration/ui]}&quot; onto org.springframework.http.ResponseEntity&lt;springfox.documentation.swagger.web.UiConfiguration&gt; springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+13:05:39.564 [INFO ] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/swagger-resources]}&quot; onto org.springframework.http.ResponseEntity&lt;java.util.List&lt;springfox.documentation.swagger.web.SwaggerResource&gt;&gt; springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+13:05:39.565 [INFO ] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/configuration/security]}&quot; onto org.springframework.http.ResponseEntity&lt;springfox.documentation.swagger.web.SecurityConfiguration&gt; springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+13:05:39.571 [INFO ] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/error],produces=[text/html]}&quot; onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+13:05:39.572 [INFO ] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped &quot;{[/error]}&quot; onto public org.springframework.http.ResponseEntity&lt;java.util.Map&lt;java.lang.String, java.lang.Object&gt;&gt; org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+13:05:40.156 [INFO ] o.s.s.w.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@64fc9c3e, org.springframework.security.web.context.SecurityContextPersistenceFilter@237762ab, org.springframework.security.web.header.HeaderWriterFilter@6faa0c34, org.springframework.security.web.authentication.logout.LogoutFilter@357706d3, com.example.demo.security.JWTLoginFilter@751089b3, com.example.demo.security.JWTAuthenticationFilter@feb8ec9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3ac39813, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4a33b5b0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4ffa65d6, org.springframework.security.web.session.SessionManagementFilter@731e558e, org.springframework.security.web.access.ExceptionTranslationFilter@4c1dd145, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1af8b2af]
+13:05:40.619 [INFO ] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+13:05:40.993 [INFO ] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@580fc813: startup date [Fri Jul 27 13:05:34 IST 2018]; root of context hierarchy
+13:05:41.076 [INFO ] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+13:05:41.077 [INFO ] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+13:05:41.100 [INFO ] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in exceptionsHandling
+13:05:41.531 [INFO ] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: e2111ce1-027c-4a52-afa9-98d64c5559cd
+
+13:05:41.551 [INFO ] s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+13:05:41.586 [INFO ] s.d.s.w.p.DocumentationPluginsBootstrapper - Found {0} custom documentation plugin(s)
+13:05:41.597 [INFO ] s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+13:05:41.607 [INFO ] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getEmployeeByDesc was employee-controller
+13:05:41.609 [INFO ] s.d.s.w.s.ApiListingReferenceScanner - Request mapping: getEmployeeByDesc belongs to groups: [[ResourceGroup{groupName='employee-controller', position=0, controller=com.example.demo.controller.EmployeeController}]] 
+13:05:41.611 [INFO ] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getEmployeeByName was employee-controller
+13:05:41.611 [INFO ] s.d.s.w.s.ApiListingReferenceScanner - Request mapping: getEmployeeByName belongs to groups: [[ResourceGroup{groupName='employee-controller', position=0, controller=com.example.demo.controller.EmployeeController}]] 
+13:05:41.612 [INFO ] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getEmployeeById was employee-controller
+13:05:41.613 [INFO ] s.d.s.w.s.ApiListingReferenceScanner - Request mapping: getEmployeeById belongs to groups: [[ResourceGroup{groupName='employee-controller', position=0, controller=com.example.demo.controller.EmployeeController}]] 
+13:05:41.614 [INFO ] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getEmployee was employee-controller
+13:05:41.614 [INFO ] s.d.s.w.s.ApiListingReferenceScanner - Request mapping: getEmployee belongs to groups: [[ResourceGroup{groupName='employee-controller', position=0, controller=com.example.demo.controller.EmployeeController}]] 
+13:05:41.614 [INFO ] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method updateEmployee was employee-controller
+13:05:41.614 [INFO ] s.d.s.w.s.ApiListingReferenceScanner - Request mapping: updateEmployee belongs to groups: [[ResourceGroup{groupName='employee-controller', position=0, controller=com.example.demo.controller.EmployeeController}]] 
+13:05:41.615 [INFO ] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method deleteEmployee was employee-controller
+13:05:41.616 [INFO ] s.d.s.w.s.ApiListingReferenceScanner - Request mapping: deleteEmployee belongs to groups: [[ResourceGroup{groupName='employee-controller', position=0, controller=com.example.demo.controller.EmployeeController}]] 
+13:05:41.617 [INFO ] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method deleteAll was employee-controller
+13:05:41.617 [INFO ] s.d.s.w.s.ApiListingReferenceScanner - Request mapping: deleteAll belongs to groups: [[ResourceGroup{groupName='employee-controller', position=0, controller=com.example.demo.controller.EmployeeController}]] 
+13:05:41.618 [INFO ] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method addEmployee was employee-controller
+13:05:41.618 [INFO ] s.d.s.w.s.ApiListingReferenceScanner - Request mapping: addEmployee belongs to groups: [[ResourceGroup{groupName='employee-controller', position=0, controller=com.example.demo.controller.EmployeeController}]] 
+13:05:41.624 [INFO ] s.d.s.w.s.ApiListingReferenceScanner - Created resource listing Path: /default/employee-controller Description: employee-controller Position: 0
+13:05:41.722 [INFO ] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getEmployeeByDesc was employee-controller
+13:05:41.749 [INFO ] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getEmployeeByName was employee-controller
+13:05:41.769 [INFO ] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getEmployeeById was employee-controller
+13:05:41.786 [INFO ] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method getEmployee was employee-controller
+13:05:41.802 [INFO ] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method updateEmployee was employee-controller
+13:05:41.813 [INFO ] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method deleteEmployee was employee-controller
+13:05:41.820 [INFO ] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method deleteAll was employee-controller
+13:05:41.831 [INFO ] s.d.s.w.ClassOrApiAnnotationResourceGrouping - Group for method addEmployee was employee-controller
+13:05:41.875 [INFO ] c.e.d.EmployeeManagementApplicationTests - Started EmployeeManagementApplicationTests in 7.882 seconds (JVM running for 10.552)
+[Employee [empId=11, empName=Abhinay, empDesc=developer], Employee [empId=12, empName=AbhinaySai, empDesc=tester]]
+calling..................
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 4.8.1</a> at 27-Jul-2018, 1:05:42 PM</p>
+</div>
+</div>
+</body>
+</html>

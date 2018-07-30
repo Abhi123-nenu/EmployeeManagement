@@ -1,0 +1,48 @@
+buildscript {
+	ext {
+		springBootVersion = '2.0.3.RELEASE'
+	}
+	repositories {
+		mavenCentral()
+	}
+	dependencies {
+		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+	}
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'org.springframework.boot'
+apply plugin: 'io.spring.dependency-management'
+
+group = 'com.example'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = 1.8
+
+repositories {
+	mavenCentral()
+}
+
+
+dependencies {
+	compile('org.springframework.boot:spring-boot-starter-web')
+	compile 'org.springframework.data:spring-data-mongodb:2.0.8.RELEASE'
+	compile("io.springfox:springfox-swagger2:2.0.2")
+    compile("io.springfox:springfox-swagger-ui:2.0.2")
+    //compile group: 'org.springframework.boot', name: 'spring-boot-starter-data-mongodb', version: '2.0.2.RELEASE'
+    testCompile group: 'org.powermock', name: 'powermock-module-junit4', version: '1.6.5'
+    compile("org.springframework.boot:spring-boot-starter-security")
+    //compile group: 'org.springframework.data', name: 'spring-data-jpa', version: '1.0.0.RELEASE'
+   compile group: 'javax.persistence', name: 'javax.persistence-api', version: '2.2'
+    compile("io.jsonwebtoken:jjwt:0.7.0")
+    //testCompile group: 'de.flapdoodle.embed', name: 'de.flapdoodle.embed.mongo', version: '2.0.0'
+    //testCompile group: 'de.svenkubiak', name: 'embedded-mongodb', version: '4.4.0'
+    testCompile group: 'org.easymock', name: 'easymock', version: '3.5'
+    //testCompile group: 'org.springframework', name: 'spring-test', version: '2.5'
+    //testCompile group: 'org.springframework', name: 'spring-test', version: '4.0.5.RELEASE'
+    testCompile("com.github.fakemongo:fongo:2.1.0")
+    compile group: 'org.springframework', name: 'spring-aspects', version: '3.2.0.RELEASE'
+    testCompile group: 'org.mockito', name: 'mockito-all', version: '2.0.2-beta'
+    //testCompile group: 'com.github.fakemongo', name: 'fongo', version: '1.3.1'
+	testCompile('org.springframework.boot:spring-boot-starter-test')
+}
